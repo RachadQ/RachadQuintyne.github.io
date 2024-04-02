@@ -1,26 +1,34 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import JournalEntryList from './journalEntryList';
+import  JournalEntryProps  from './types/journalEntry.interface';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// Example data for journal entries
+const exampleEntries: JournalEntryProps[] = [
+  {
+    entry: {
+      id: 1,
+      title: "First Entry",
+      content: "Content of the first entry.",
+      tags: ["tag1", "tag2"]
+    }
+  },
+  {
+    entry: {
+      id: 2,
+      title: "Second Entry",
+      content: "Content of the second entry.",
+      tags: ["tag3", "tag4"]
+    }
+  }]
+return (
+  <div>
+      <h1>Journal Entries</h1>
+      {/* Pass the exampleEntries array to the JournalEntryList component */}
+      <JournalEntryList entries={exampleEntries} />
+  </div>
+);
 }
 
 export default App;
