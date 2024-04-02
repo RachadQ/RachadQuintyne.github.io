@@ -1,10 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import JournalEntryList from './journalEntryList';
+import JournalEntryList from './types/journalEntryListProps.interface';
 import  JournalEntryProps  from './types/journalEntry.interface';
+import Profile from './Profile';
+import ProfileProps  from './types/profileProps.interface';
 function App() {
-// Example data for journal entries
+ // Example data for profile and journal entries
+
 const exampleEntries: JournalEntryProps[] = [
   {
     entry: {
@@ -22,11 +25,26 @@ const exampleEntries: JournalEntryProps[] = [
       tags: ["tag3", "tag4"]
     }
   }]
+
+  
+const list: JournalEntryList = {
+  entries: exampleEntries
+}
+ const profileData: ProfileProps = {
+   profile: {
+     name: 'John Doe',
+     title: 'Software Engineer',
+     location: 'New York'
+   }
+   // Add more profile data as needed
+   ,
+   journalEntryList: list
+ };
 return (
   <div>
       <h1>Journal Entries</h1>
       {/* Pass the exampleEntries array to the JournalEntryList component */}
-      <JournalEntryList entries={exampleEntries} />
+      <Profile profile={profileData.profile} journalEntryList={profileData.journalEntryList} />
   </div>
 );
 }
