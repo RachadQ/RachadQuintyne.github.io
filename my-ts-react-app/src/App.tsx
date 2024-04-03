@@ -5,16 +5,34 @@ import JournalEntryList from './types/journalEntryListProps.interface';
 import  JournalEntryProps  from './types/journalEntry.interface';
 import Profile from './Profile';
 import ProfileProps  from './types/profileProps.interface';
+import Tag from './types/tag.interface'
+
 function App() {
  // Example data for profile and journal entries
+ const tags: Tag[] = [
+  {
+  info:{
+    id: 1,
+     name: "C#", 
+     categoryId: 1 
+    }
+  },
+  {
+  info:{
+     id: 1, name: "C++", categoryId: 1 
+   
+    }
 
+  }
+
+];
 const exampleEntries: JournalEntryProps[] = [
   {
     entry: {
       id: 1,
       title: "First Entry",
       content: "Content of the first entry.",
-      tags: ["tag1", "tag2"]
+      tags: tags
     }
   },
   {
@@ -22,7 +40,7 @@ const exampleEntries: JournalEntryProps[] = [
       id: 2,
       title: "Second Entry",
       content: "Content of the second entry.",
-      tags: ["tag3", "tag4"]
+      tags: tags
     }
   }]
 
@@ -32,9 +50,9 @@ const list: JournalEntryList = {
 }
  const profileData: ProfileProps = {
    profile: {
-     name: 'John Doe',
-     title: 'Software Engineer',
-     location: 'New York'
+     name: 'Rachad Quintyne',
+     title: 'Software Developer',
+     location: 'Mississauga, Ontario'
    }
    // Add more profile data as needed
    ,
@@ -42,7 +60,6 @@ const list: JournalEntryList = {
  };
 return (
   <div>
-      <h1>Journal Entries</h1>
       {/* Pass the exampleEntries array to the JournalEntryList component */}
       <Profile profile={profileData.profile} journalEntryList={profileData.journalEntryList} />
   </div>

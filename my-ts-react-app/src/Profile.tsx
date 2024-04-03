@@ -1,10 +1,11 @@
 import ProfileProps from "./types/profileProps.interface"
 import JournalEntryList from './journalEntryList';
-
+import './styles/profile.css';
     
 const profile: React.FC<ProfileProps> = ({ profile, journalEntryList }) => {
     return(
-        <div className="profile">
+        <div>
+            <div className="profile">
         {/* Profile Header */}
         <header className="profile-header">
           {/* Profile Picture */}
@@ -18,15 +19,15 @@ const profile: React.FC<ProfileProps> = ({ profile, journalEntryList }) => {
             <p className="profile-location">{profile.location}</p>
           </div>
         </header>
+        
         {/* Journal Entries */}
         <section className="journal-entries">
           <h2 className="section-title">Journal Entries</h2>
           <JournalEntryList entries={journalEntryList.entries} />
         </section>
-        {/* Sidebar */}
-        <aside className="sidebar">
-          {/* Sidebar Content */}
-        </aside>
+        </div>
+        
+       
       </div>
     );
     }

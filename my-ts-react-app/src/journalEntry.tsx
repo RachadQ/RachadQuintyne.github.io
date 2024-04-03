@@ -1,4 +1,6 @@
 import JournalEntryProps from "./types/journalEntry.interface";
+import TagComponent from "./tags";
+import './styles/journalEntry.css';
 
 const JournalEntry: React.FC<JournalEntryProps> = ({entry}) =>{
 
@@ -6,10 +8,13 @@ const JournalEntry: React.FC<JournalEntryProps> = ({entry}) =>{
     const tagsString = entry.tags.join(', ');
     return (
         <div className="journal-post">
-      <h3>{entry.title}</h3>
-      <p>{entry.content}</p>
-      <p className="tags"> {tagsString}</p>
-    </div>
+            <div className="entry-title"> <h3>{entry.title}</h3></div>
+            <div className="entry-content"><p>{entry.content}</p></div>
+            <p className="entry-tags"> 
+            {entry.tags.map(tag => (
+                    <TagComponent key={tag.info.id} info={tag.info} />
+                ))}</p>
+        </div>
       );
 }
 
