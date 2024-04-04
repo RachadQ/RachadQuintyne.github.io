@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import JournalEntryList from './types/journalEntryListProps.interface';
 import  JournalEntryProps  from './types/journalEntry.interface';
-import Profile from './Profile';
+import Profile from './components/Profile';
 import ProfileProps  from './types/profileProps.interface';
 import Tag from './types/tag.interface'
 

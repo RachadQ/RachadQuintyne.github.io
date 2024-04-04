@@ -1,6 +1,6 @@
-import ProfileProps from "./types/profileProps.interface"
+import ProfileProps from "../types/profileProps.interface"
 import JournalEntryList from './journalEntryList';
-import './styles/profile.css';
+import '../styles/profile.css';
     
 const profile: React.FC<ProfileProps> = ({ profile, journalEntryList }) => {
     return(

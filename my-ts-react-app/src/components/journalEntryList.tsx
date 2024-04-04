@@ -1,6 +1,6 @@
 import React from 'react';
 import JournalEntry from './journalEntry';
-import JournalEntryListProps from './types/journalEntryListProps.interface';
+import JournalEntryListProps from '../types/journalEntryListProps.interface';
 
 
     const JournalEntryList: React.FC<JournalEntryListProps> = ({entries}) =>{

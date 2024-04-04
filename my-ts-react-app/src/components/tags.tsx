@@ -1,4 +1,4 @@
-import Tag from "./types/tag.interface"
+import Tag from "../types/tag.interface"
 
 const tagComponent: React.FC<Tag> = ({ info }) => {
     

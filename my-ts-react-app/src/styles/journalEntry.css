@@ -8,13 +8,23 @@
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
+    
   }
   
   .entry-title {
-    font-size: 18px;    
+    font-size: 18px;  
+    margin-bottom: 0; /* Remove the bottom margin */
     font-weight: bold;
-    margin-bottom: 10px;
+    text-decoration: none; /* Remove underline */
+    text-align: center;
+    
   }
+
+  
+
+  .entry-title:hover {
+    text-decoration: underline; /* Underline on hover */
+}
   
   .entry-content {
     font-size: 16px;
@@ -25,4 +35,7 @@
     margin-top: 10px;
     font-size: 14px;
     color: #666;
+    white-space: nowrap;
+    display: inline-block; /* Display tags on the same line */
+    margin-right: 5px; 
   }

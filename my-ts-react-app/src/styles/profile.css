@@ -48,30 +48,7 @@
     margin-bottom: 10px;
   }
   
-  .journal-entry {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .entry-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0;
-  }
-  
-  .entry-content {
-    margin-top: 5px;
-    color: #333;
-  }
-  
-  .entry-tags {
-    margin-top: 5px;
-    color: #666;
-  }
-  
+
   .sidebar {
     position: fixed;
     width: 200px;
