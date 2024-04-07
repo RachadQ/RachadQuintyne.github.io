@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/RachadQuintyne.github.io/static/css/main.e606816f.css",
-    "main.js": "/RachadQuintyne.github.io/static/js/main.fd20d4c9.js",
+    "main.css": "/RachadQuintyne.github.io/static/css/main.3484dfe2.css",
+    "main.js": "/RachadQuintyne.github.io/static/js/main.df79b700.js",
     "static/js/453.a58b63fb.chunk.js": "/RachadQuintyne.github.io/static/js/453.a58b63fb.chunk.js",
     "index.html": "/RachadQuintyne.github.io/index.html",
-    "main.e606816f.css.map": "/RachadQuintyne.github.io/static/css/main.e606816f.css.map",
-    "main.fd20d4c9.js.map": "/RachadQuintyne.github.io/static/js/main.fd20d4c9.js.map",
+    "main.3484dfe2.css.map": "/RachadQuintyne.github.io/static/css/main.3484dfe2.css.map",
+    "main.df79b700.js.map": "/RachadQuintyne.github.io/static/js/main.df79b700.js.map",
     "453.a58b63fb.chunk.js.map": "/RachadQuintyne.github.io/static/js/453.a58b63fb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e606816f.css",
-    "static/js/main.fd20d4c9.js"
+    "static/css/main.3484dfe2.css",
+    "static/js/main.df79b700.js"
   ]
 }
