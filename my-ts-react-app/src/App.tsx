@@ -33,6 +33,30 @@ function App() {
     }
 
 ];
+const tags2: Tag[] = [
+  {
+  info:{
+    id: 1,
+     name: "Excel", 
+     categoryId: 1 
+    }
+  },
+  {
+  info:{
+     id: 1, name: "Vlookup", categoryId: 1 
+   
+    }
+
+  },
+  {
+    info:{
+       id: 1, name: "Accounting", categoryId: 1 
+     
+      }
+  
+    }
+
+];
 const exampleEntries: JournalEntryProps[] = [
   {
     entry: {
@@ -45,9 +69,9 @@ const exampleEntries: JournalEntryProps[] = [
   {
     entry: {
       id: 2,
-      title: "Update React app UI",
-      content: "Added Tailwinds css to project ",
-      tags: tags
+      title: "Learn't excel Basics",
+      content: "Today, I utilized Excel's vlookup function to match product IDs with corresponding prices for a sales campaign, drawing from my prior experience with the tool during an internship. Despite encountering discrepancies, I successfully generated a pricing list, showcasing my proficiency in Excel and problem-solving skills.",
+      tags: tags2
     }
   }]
 
