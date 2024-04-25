@@ -13,33 +13,40 @@ function App() {
   {
   info:{
     id: 1,
-     name: "C#", 
+     name: "React", 
      categoryId: 1 
     }
   },
   {
   info:{
-     id: 1, name: "C++", categoryId: 1 
+     id: 1, name: "Typescript", categoryId: 1 
    
     }
 
-  }
+  },
+  {
+    info:{
+       id: 1, name: "FireBase", categoryId: 1 
+     
+      }
+  
+    }
 
 ];
 const exampleEntries: JournalEntryProps[] = [
   {
     entry: {
       id: 1,
-      title: "First Entry",
-      content: "Content of the first entry.",
+      title: "Full Stack Application",
+      content: "Connect react project to firebase, because github pages doesn't allow users to run backend code. With Firebase, traditional backend development is bypassed, putting the work into the client. ",
       tags: tags
     }
   },
   {
     entry: {
       id: 2,
-      title: "Second Entry",
-      content: "Content of the second entry.",
+      title: "Update React app UI",
+      content: "Added Tailwinds css to project ",
       tags: tags
     }
   }]
@@ -52,7 +59,7 @@ const list: JournalEntryList = {
    profile: {
      name: 'Rachad Quintyne',
      title: 'Software Developer',
-     location: 'Mississauga, Ontario'
+     location: 'Mississauga, Ontario, Canada'
    }
    // Add more profile data as needed
    ,

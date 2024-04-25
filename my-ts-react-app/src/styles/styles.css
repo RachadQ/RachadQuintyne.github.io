@@ -1,0 +1,8 @@
+/* Import Tailwind CSS base styles */
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/base.min.css');
+
+/* Import Tailwind CSS component styles */
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/components.min.css');
+
+/* Import Tailwind CSS utility styles */
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/utilities.min.css');
