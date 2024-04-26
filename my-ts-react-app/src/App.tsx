@@ -97,4 +97,5 @@ return (
 );
 }
 
+document.title = "Rachad Quintyne | Entries";
 export default App;
