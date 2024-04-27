@@ -7,7 +7,7 @@ import JournalEntryListProps from '../types/journalEntryListProps.interface';
         return (
             <div className="entry-list">
             {entries.map((entry, index) => (
-                <JournalEntry key={index} entry={entry.entry} /> // Pass each entry object to JournalEntry component
+                <JournalEntry key={entry.entry.id} entry={entry.entry} /> // Pass each entry object to JournalEntry component
             ))}
           </div>
           );

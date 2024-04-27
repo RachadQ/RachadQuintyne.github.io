@@ -1,11 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import JournalEntryList from './types/journalEntryListProps.interface';
+import JournalEntryListProp from './types/journalEntryListProps.interface';
 import  JournalEntryProps  from './types/journalEntry.interface';
 import Profile from './components/Profile';
 import ProfileProps  from './types/profileProps.interface';
 import Tag from './types/tag.interface'
+import { HashRouter as Router, Route, Routes  } from 'react-router-dom';
+import JournalEntryList from './components/journalEntryList';
+import HomePage from './components/homePage';
 
 function App() {
  // Example data for profile and journal entries
@@ -76,23 +79,31 @@ const exampleEntries: JournalEntryProps[] = [
   }]
 
   
-const list: JournalEntryList = {
+const list: JournalEntryListProp = {
   entries: exampleEntries
 }
  const profileData: ProfileProps = {
    profile: {
+    id: '1',
      name: 'Rachad Quintyne',
      title: 'Software Developer',
-     location: 'Mississauga, Ontario, Canada'
+     location: 'Mississauga, Ontario, Canada',
+     journalEntryList: list
    }
-   // Add more profile data as needed
-   ,
-   journalEntryList: list
+  
  };
 return (
   <div>
       {/* Pass the exampleEntries array to the JournalEntryList component */}
-      <Profile profile={profileData.profile} journalEntryList={profileData.journalEntryList} />
+     {/* <Profile profile={profileData.profile} journalEntryList={profileData.journalEntryList} />*/}
+
+      <Router>
+        <Routes>
+          {/*<UserProfile profile={profileData} />*/}
+          {/*<Route path="/"  element={<HomePage/>} >*/}
+          <Route path="/" element={<HomePage/>} />
+        </Routes>
+       </Router>
   </div>
 );
 }
