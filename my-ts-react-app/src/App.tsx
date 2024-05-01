@@ -9,6 +9,8 @@ import Tag from './types/tag.interface'
 import { HashRouter as Router, Route, Routes  } from 'react-router-dom';
 import JournalEntryList from './components/journalEntryList';
 import HomePage from './components/homePage';
+import LoginPage from './components/loginPage';
+import RegisterPage from './components/registerPage';
 
 function App() {
  // Example data for profile and journal entries
@@ -101,7 +103,11 @@ return (
         <Routes>
           {/*<UserProfile profile={profileData} />*/}
           {/*<Route path="/"  element={<HomePage/>} >*/}
-          <Route path="/" element={<HomePage/>} />
+          {/*<Route path="/" element={<HomePage/>} />*/}
+          {/*<Route path="/" element={<LoginPage/>} />*/}
+          <Route path="/" element={<RegisterPage/>} />
+
+
         </Routes>
        </Router>
   </div>
